@@ -2,16 +2,16 @@
   "use strict";
   
   angular.module("MenuApp")
-    .component("items", {
-      templateUrl: "js/components/items.template.html",
-      controller: ItemsComponentController,
+    .component("categories", {
+      templateUrl: "js/components/categories.template.html",
+      controller: CategoriesComponentController,
       bindings: {
-        list: "<"
+        items: "<"
       }
     });
 
-  ItemsComponentController.$inject = [];
-  function ItemsComponentController() {
+  CategoriesComponentController.$inject = [];
+  function CategoriesComponentController() {
     // var comp = this;
   }
 })();
